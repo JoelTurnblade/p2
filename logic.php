@@ -88,5 +88,5 @@ if ($data->getUserAnswer() == null) {
 if ($data->getFirstNum() != null && $data->getSecondNum() != null && $oppString != null) {
     $dispString = $data->getFirstNum() . $oppString . $data->getSecondNum();
 } else {
-    $dispString = '<br>';
+    $dispString = '';
 }

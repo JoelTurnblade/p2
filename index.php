@@ -38,7 +38,7 @@ require 'logic.php';
     <input type='radio' name='secondNumDig' value='3' <?= ($data->getSecondNumDig() == 3) ? 'checked' : '' ?>>3
     <input type='radio' name='secondNumDig' value='4' <?= ($data->getSecondNumDig() == 4) ? 'checked' : '' ?>>4
     <br>
-    <p><?= $dispString ?></p>
+    <p><?= $dispString != '' ? $dispString : '<br>' ?></p>
     <input type='text' name='userAnswer' value='<?= $data->getErrors() != null ? $data->getUserAnswer() : '' ?>'>
     <br>
     <input type='submit' value='check answer / generate'>
